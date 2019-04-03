@@ -1,0 +1,14 @@
+<section class="jumbotron text-center">
+        <div class="container">
+            <h1 class="display-4">Animal&Co</h1>
+            <p class="lead">Magasin qui vend tout type de chose, même ta mère parfois</p>
+            <button routerLink="/dog/create" class="btn btn-info">Ajouter un chien</button>
+            <br><br>
+        </div>
+        <br><br>
+        <h1>Catégorie : Chien</h1>
+      </section>
+    
+    <div class="animalList row justify-content-between">
+        <app-dog-card *ngFor="let item of dogs" [dog]="item"></app-dog-card>
+    </div>

@@ -1,0 +1,15 @@
+<div class="card" style="width: 27rem;">
+    <img class="card-img-top" src="{{ cat.image }}" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Nom : {{ cat.name }}</h5>
+      <p>Description : {{ cat.desc }}</p>
+      <button (click)="wantToTalk()" class="btn btn-success">Demander un rendez-vous</button>
+      <br><br>
+      <button [routerLink]="['/cat/update', cat.id]" class="btn btn-danger">Editer</button>
+    </div>
+  </div>
+
+<!-- name: string;
+    breed: string;
+    type: number;
+    talk: string; -->

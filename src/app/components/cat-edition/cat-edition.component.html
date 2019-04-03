@@ -1,0 +1,13 @@
+<form [formGroup]="catForm" (ngSubmit)="submitForm()">
+  <input type="text" placeholder="Name" formControlName="name">
+  <input type="text" placeholder="breed" formControlName="breed">
+  <input type="text" placeholder="talk" formControlName="talk">
+  <input type="number" placeholder="id" formControlName="id">
+  <button type="submit">Save</button>
+</form>
+
+<!-- <input type="text" placeholder="Name" [formControl]="catNameControl"> -->
+
+
+<!-- <button (click)="getInput()">Value input</button> -->
+<!-- <button (click)="reset()">reset</button> -->
